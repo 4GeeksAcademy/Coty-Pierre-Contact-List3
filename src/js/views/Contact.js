@@ -15,14 +15,17 @@ export const Contacts = () => {
 		return (
 			<div className="contactsPage container">
 				<Link to="/Add">
-					<button className="addContact btn btn-success">Add new contact</button>
+					<button className="addContact btn btn-success">New contact</button>
 				</Link>
 						{store.contacts.map((item, index) => {
 							return (
 								<div className="contactGroup" key={index}>
-									<div className="contact">
+									<div className="contact"
+										style={{
+										backgroundImage: `url("https://th.bing.com/th/id/OIP.ilHqvrk_JZBMyBvYY5AJrwHaE8?pid=ImgDet&rs=1")`,
+									  	}}>
 										<div className="image">
-										<img src="https://picsum.photos/id/64/150"/>
+										<img src="https://th.bing.com/th/id/OIP.MLb1Yii_qOTTTPI0F_fqmgD6D6?pid=ImgDet&rs=1"/>
 										</div>
 										<div className="information">
 											<div>
