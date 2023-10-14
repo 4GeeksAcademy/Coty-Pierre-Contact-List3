@@ -38,7 +38,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					});
 			},
 
-			updateContact: (indexUpdate, contact) => {
+			updateContact: (indexUpdate) => {
+				console.log(indexUpdate)
 				let requestOptions = {
 					method: 'PUT',
 					redirect: 'follow',
